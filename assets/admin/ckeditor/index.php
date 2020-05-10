@@ -101,12 +101,12 @@ $header .= "Content-type:text/html; charset=iso-8859-1\r\n";
 	 /*************************mail**********************************/
 	 $to = $cell_trim;
 	 $cell_trim=trim($email," ");
-	 $my_file = "DigiLantern.pdf";
+	 $my_file = "";
 $my_path = "";
-$my_name = "Digilantern";
-$my_mail = "info@digilantern.com";
-$my_replyto = "info@digilantern.com";
-$my_subject = "Accelerating Business through Digitalization @DigiLantern";
+$my_name = "";
+$my_mail = "";
+$my_replyto = "";
+$my_subject = "";
 $my_message = "";
 	 
 	 /***********************mail************************************/

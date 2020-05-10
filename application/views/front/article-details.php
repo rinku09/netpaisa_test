@@ -10,23 +10,17 @@
 <div class="container">
 	<div class="row">
 		<div class="page-header" style="text-align: center;">
-    		<h1>Article List</h1>      
+    		<h1><?php echo $details->article_title; ?></h1>      
   		</div>
 		<div class="col-md-12">
 			<div class="row">
-				<?php foreach ($article as $art) { ?>
-					<div class="col-md-6">
 						<div class="thumbnail">
-					        <img src="<?php echo base_url().'assets/article/'.$art->article_image; ?>" alt="<?php echo $art->alt_image_name; ?>" style="width:100%">
+					        <img src="<?php echo base_url().'assets/article/'.$details->article_image; ?>" alt="<?php echo $details->alt_image_name; ?>" style="width:100%">
 					        <div class="caption">
-					        	<h3><?php echo $art->article_title; ?></h3>
-					          	<p><?php echo isset($art->article) && strlen(strip_tags($art->article)) > 100 ?  substr(strip_tags($art->article),'0','100').'...' : strip_tags($art->article) ;?></p>
-					          	<a href="<?php echo base_url('article'); ?>/<?php echo $art->url; ?>">Read More</a>
+					          	<p><?php echo ($details->article);?></p>
 					        </div>
 						</div>
 					</div>
-				<?php } ?>
-				<?php echo $links; ?>
 			</div>
 		</div>
 	</div>

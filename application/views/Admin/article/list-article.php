@@ -27,6 +27,7 @@
                     <th>Article</th>
                     <th>Article Image</th>
                     <th>Article Inner Image</th>
+                    <th>Publish Status</th>
                     <th>Action</th>
                   </tr>
                 </thead>
@@ -37,10 +38,6 @@
                     <td>
                       <?php echo $value->id; ?>
                     </td>
-                   
-                    <!--td>
-                      <?php echo $value->category_name; ?>
-                    </td-->
                     
                     <td>
                       <?php echo $value->article_title; ?>
@@ -58,6 +55,9 @@
                       <img style="width: 150px;" class="article_image_inner" src="<?php echo base_url().'assets/article_inner/'.$value->article_image_inner ;?>" alt="<?php echo ($value->alt_image_name); ?>">
                     </td>
                   
+                    <td>
+                      <?php echo $value->status; ?>
+                    </td>
                     
                     <td>
                       <a href="<?php echo base_url().'article_edit/'.$value->id; ?>" ><i class="fa fa-edit"></i></a>&nbsp;
@@ -65,7 +65,7 @@
                     </td>
 
 
-                  </tr> 
+                  </tr>
                   <?php endforeach; ?>
                     <!-- End foreach loop -->
                 </tbody>

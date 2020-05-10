@@ -67,6 +67,8 @@ $route['article_edit/(:any)']   = 'Admin_article/edit/$1';
 $route['article_delete/(:any)'] = 'Admin_article/delete/$1';
 
 $route['article'] = 'Front_controller/index';
+$route['article/(:num)'] = 'Front_controller/index/$1';
+$route['article/(:any)'] = 'Front_controller/article_details/$1';
 
 //================Admin================//
 

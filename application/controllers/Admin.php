@@ -11,8 +11,6 @@ class Admin extends CI_Controller {
 	$this->load->helper('form');
 	    $this->load->library('form_validation');
 	    $this->load->model('Admin_mod');
-	    $this->load->model('Admin_form_model');
-	  //echo CI_VERSION;  
     }
 
 	
